@@ -12,16 +12,16 @@ export default function Home() {
                     fill
                     className="-z-10 bg-center object-cover"
                 />
-                <div className="absolute bottom-20 left-20">
+                <div className="absolute bottom-20 left-20 md:bottom-5 md:left-5">
                     <p className="mb-10 text-7xl font-medium md:text-4xl lg:text-5xl">
                         Maximizing the <br /> potential of your <br /> employees
                     </p>
 
                     <div className="flex gap-5 md:text-sm">
-                        <button className="rounded-full border-2 border-black px-10 py-4 font-medium">
+                        <button className="rounded-full border-2 border-black px-10 py-4 font-medium md:px-5 md:py-2">
                             Start for free
                         </button>
-                        <button className="rounded-full border-2 border-primary bg-primary px-10 py-4 font-medium text-gray-custom">
+                        <button className="rounded-full border-2 border-primary bg-primary px-10 py-4 font-medium text-gray-custom md:px-5 md:py-2">
                             Start for free
                         </button>
                     </div>
