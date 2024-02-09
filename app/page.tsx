@@ -1,5 +1,9 @@
 import Header from "@/components/header";
 import Image from "next/image";
+import { FaRegLightbulb } from "react-icons/fa";
+import { IoPersonOutline } from "react-icons/io5";
+import { LuLineChart } from "react-icons/lu";
+import { VscSync } from "react-icons/vsc";
 
 export default function Home() {
     return (
@@ -10,10 +14,10 @@ export default function Home() {
                     src="/assets/images/hero.png"
                     alt="Hero Image"
                     fill
-                    className="-z-10 bg-center object-cover"
+                    className="-z-10 bg-gray-custom bg-center object-contain"
                 />
                 <div className="absolute bottom-20 left-20 md:bottom-5 md:left-5">
-                    <p className="mb-10 text-7xl font-medium md:text-4xl lg:text-5xl">
+                    <p className="mb-10 text-7xl font-medium lg:text-5xl md:text-4xl">
                         Maximizing the <br /> potential of your <br /> employees
                     </p>
 
@@ -27,7 +31,7 @@ export default function Home() {
                     </div>
                 </div>
 
-                <p className="absolute right-20 top-40 font-medium">
+                <p className="absolute right-20 top-40 font-medium md:hidden">
                     Hrmanage supports your team <br /> inside your company,
                     equips your <br />
                     staff with self-service capabilities, <br /> and foster
@@ -38,15 +42,49 @@ export default function Home() {
             </section>
 
             <section className="flex-center flex-col gap-10 p-20 md:p-5">
-                <p className="text-lg font-medium">
+                <p className="text-center text-lg font-medium">
                     +8,000 businesses uses form-carry for their forms
                 </p>
                 <div className="flex-center flex-wrap gap-x-24 gap-y-5">
-                    <div className="h-14 w-52 bg-gray-500"></div>
-                    <div className="h-14 w-52 bg-gray-500"></div>
-                    <div className="h-14 w-52 bg-gray-500"></div>
-                    <div className="h-14 w-52 bg-gray-500"></div>
-                    <div className="h-14 w-52 bg-gray-500"></div>
+                    <Image
+                        src="/assets/images/company/coinbase.svg"
+                        alt="Company Logo"
+                        width={100}
+                        height={100}
+                        className="object-contain grayscale duration-300 hover:grayscale-0"
+                    />
+
+                    <Image
+                        src="/assets/images/company/dropbox.svg"
+                        alt="Company Logo"
+                        width={100}
+                        height={100}
+                        className="object-contain grayscale duration-300 hover:grayscale-0"
+                    />
+
+                    <Image
+                        src="/assets/images/company/slack.svg"
+                        alt="Company Logo"
+                        width={100}
+                        height={100}
+                        className="object-contain grayscale duration-300 hover:grayscale-0"
+                    />
+
+                    <Image
+                        src="/assets/images/company/wix.svg"
+                        alt="Company Logo"
+                        width={100}
+                        height={100}
+                        className="object-contain grayscale duration-300 hover:grayscale-0"
+                    />
+
+                    <Image
+                        src="/assets/images/company/zoom.svg"
+                        alt="Company Logo"
+                        width={100}
+                        height={100}
+                        className="object-contain grayscale duration-300 hover:grayscale-0"
+                    />
                 </div>
             </section>
 
@@ -66,9 +104,13 @@ export default function Home() {
                 </p>
 
                 <div className="flex w-full flex-wrap justify-center gap-5">
-                    <div className="group flex h-[600px] min-w-[300px] flex-1 flex-col justify-between rounded-[40px] bg-gray-custom p-10 transition-all duration-300 ease-in-out hover:flex-2 hover:bg-secondary lg:gap-5 lg:rounded-3xl 2xl:h-[400px] 2xl:p-5">
-                        <div className="aspect-square w-[50px] bg-gray-300 "></div>
-                        <p className="max-w-[200px] text-5xl capitalize duration-300 ease-in-out group-hover:text-white lg:max-w-full 2xl:text-3xl">
+                    <div className="group flex h-[600px] min-w-[300px] flex-1 flex-col justify-between rounded-[40px] bg-gray-custom p-10 transition-all duration-300 ease-in-out hover:flex-2 hover:bg-secondary 2xl:h-[400px] 2xl:p-5 lg:gap-5 lg:rounded-3xl">
+                        <FaRegLightbulb
+                            size={50}
+                            className="group-hover:text-white"
+                        />
+
+                        <p className="max-w-[200px] text-5xl capitalize duration-300 ease-in-out group-hover:text-white 2xl:text-3xl lg:max-w-full">
                             Focusing on the job is more important.
                         </p>
                         <p className="mb-5 max-w-[300px] opacity-0 transition-all duration-300 ease-in-out group-hover:text-white group-hover:opacity-100 lg:max-w-full">
@@ -81,9 +123,9 @@ export default function Home() {
                         </button>
                     </div>
 
-                    <div className="group flex h-[600px] min-w-[300px] flex-1 flex-col justify-between rounded-[40px] bg-gray-custom p-10 transition-all duration-300 ease-in-out hover:flex-2 hover:bg-secondary lg:gap-5 lg:rounded-3xl 2xl:h-[400px] 2xl:p-5">
-                        <div className="aspect-square w-[50px] bg-gray-300 "></div>
-                        <p className="max-w-[200px] text-5xl capitalize duration-300 ease-in-out group-hover:text-white lg:max-w-full 2xl:text-3xl">
+                    <div className="group flex h-[600px] min-w-[300px] flex-1 flex-col justify-between rounded-[40px] bg-gray-custom p-10 transition-all duration-300 ease-in-out hover:flex-2 hover:bg-secondary 2xl:h-[400px] 2xl:p-5 lg:gap-5 lg:rounded-3xl">
+                        <VscSync size={50} className="group-hover:text-white" />
+                        <p className="max-w-[200px] text-5xl capitalize duration-300 ease-in-out group-hover:text-white 2xl:text-3xl lg:max-w-full">
                             One system for all your business.
                         </p>
                         <p className="mb-5 max-w-[300px] opacity-0 transition-all duration-300 ease-in-out group-hover:text-white group-hover:opacity-100 lg:max-w-full">
@@ -96,9 +138,12 @@ export default function Home() {
                         </button>
                     </div>
 
-                    <div className="group flex h-[600px] min-w-[300px] flex-1 flex-col justify-between rounded-[40px] bg-gray-custom p-10 transition-all duration-300 ease-in-out hover:flex-2 hover:bg-secondary lg:gap-5 lg:rounded-3xl 2xl:h-[400px] 2xl:p-5">
-                        <div className="aspect-square w-[50px] bg-gray-300 "></div>
-                        <p className="max-w-[250px] text-5xl capitalize duration-300 ease-in-out group-hover:text-white lg:max-w-full 2xl:text-3xl">
+                    <div className="group flex h-[600px] min-w-[300px] flex-1 flex-col justify-between rounded-[40px] bg-gray-custom p-10 transition-all duration-300 ease-in-out hover:flex-2 hover:bg-secondary 2xl:h-[400px] 2xl:p-5 lg:gap-5 lg:rounded-3xl">
+                        <IoPersonOutline
+                            size={50}
+                            className="group-hover:text-white"
+                        />
+                        <p className="max-w-[250px] text-5xl capitalize duration-300 ease-in-out group-hover:text-white 2xl:text-3xl lg:max-w-full">
                             You can hire the best one for the company.
                         </p>
                         <p className="mb-5 max-w-[300px] opacity-0 transition-all duration-300 ease-in-out group-hover:text-white group-hover:opacity-100 lg:max-w-full">
@@ -111,9 +156,12 @@ export default function Home() {
                         </button>
                     </div>
 
-                    <div className="group flex h-[600px] min-w-[300px] flex-1 flex-col justify-between rounded-[40px] bg-gray-custom p-10 transition-all duration-300 ease-in-out hover:flex-2 hover:bg-secondary lg:gap-5 lg:rounded-3xl 2xl:h-[400px] 2xl:p-5">
-                        <div className="aspect-square w-[50px] bg-gray-300 "></div>
-                        <p className="max-w-[200px] text-5xl capitalize duration-300 ease-in-out group-hover:text-white lg:max-w-full 2xl:text-3xl">
+                    <div className="group flex h-[600px] min-w-[300px] flex-1 flex-col justify-between rounded-[40px] bg-gray-custom p-10 transition-all duration-300 ease-in-out hover:flex-2 hover:bg-secondary 2xl:h-[400px] 2xl:p-5 lg:gap-5 lg:rounded-3xl">
+                        <LuLineChart
+                            size={50}
+                            className="group-hover:text-white"
+                        />
+                        <p className="max-w-[200px] text-5xl capitalize duration-300 ease-in-out group-hover:text-white 2xl:text-3xl lg:max-w-full">
                             Productivity goes up to 80% in quality.
                         </p>
                         <p className="mb-5 max-w-[300px] opacity-0 transition-all duration-300 ease-in-out group-hover:text-white group-hover:opacity-100 lg:max-w-full">
@@ -152,7 +200,7 @@ export default function Home() {
                 </div>
 
                 <div className="flex-center w-full gap-5 lg:flex-col">
-                    <div className="flex h-[850px] w-1/2 flex-col justify-between rounded-[40px] bg-primary p-10 lg:w-full 2xl:h-[700px]">
+                    <div className="flex h-[850px] w-1/2 flex-col justify-between rounded-[40px] bg-primary p-10 2xl:h-[700px] lg:w-full">
                         <div className="mt-10 flex h-full w-1/2 flex-col justify-between gap-10 2xl:w-full 2xl:gap-5">
                             <p className="text-5xl capitalize text-white 2xl:text-3xl">
                                 After joining, you <br />
@@ -205,7 +253,7 @@ export default function Home() {
                         </div>
                     </div>
 
-                    <div className="flex h-[850px] w-1/2 flex-col justify-between rounded-[40px] bg-gray-custom p-10 lg:w-full 2xl:h-[700px]">
+                    <div className="flex h-[850px] w-1/2 flex-col justify-between rounded-[40px] bg-gray-custom p-10 2xl:h-[700px] lg:w-full">
                         <div className="mt-10 flex h-full w-1/2 flex-col justify-between gap-10 2xl:w-full 2xl:gap-5">
                             <p className="text-5xl capitalize  2xl:text-3xl">
                                 After joining, you <br />
@@ -343,7 +391,14 @@ export default function Home() {
 
             <section className="flex-center p-20 md:p-5">
                 <div className="flex-center w-full rounded-3xl bg-primary p-20">
-                    <div className="h-[500px] w-1/2 lg:hidden"></div>
+                    <div className="relative h-[500px] w-1/2 lg:hidden">
+                        <Image
+                            src="/assets/images/hero.png"
+                            alt="Phone Image"
+                            fill
+                            className="object-cover"
+                        />
+                    </div>
                     <div className="flex max-w-[350px] flex-col gap-5 text-white">
                         <p className="text-5xl">Get started now with us.</p>
                         <p className="">
@@ -365,37 +420,69 @@ export default function Home() {
             <div className="p-20 md:p-5">
                 <div className="flex w-full flex-wrap justify-between gap-10">
                     <div className="flex flex-col gap-5">
-                        <p className="font-bold">Company</p>
-                        <p className="text-gray-500">Link</p>
-                        <p className="text-gray-500">Link</p>
-                        <p className="text-gray-500">Link</p>
+                        <a href="" className="font-bold">
+                            Company
+                        </a>
+                        <a href="" className="text-gray-500">
+                            About Us
+                        </a>
+                        <a href="" className="text-gray-500">
+                            Contact
+                        </a>
+                        <a href="" className="text-gray-500">
+                            Careers
+                        </a>
                     </div>
                     <div className="flex flex-col gap-5">
-                        <p className="font-bold">Company</p>
-                        <p className="text-gray-500">Link</p>
-                        <p className="text-gray-500">Link</p>
-                        <p className="text-gray-500">Link</p>
+                        <a href="" className="font-bold">
+                            Company
+                        </a>
+                        <a href="" className="text-gray-500">
+                            Blog
+                        </a>
+                        <a href="" className="text-gray-500">
+                            FAQ
+                        </a>
+                        <a href="" className="text-gray-500">
+                            Terms of Service
+                        </a>
                     </div>
                     <div className="flex flex-col gap-5">
-                        <p className="font-bold">Company</p>
-                        <p className="text-gray-500">Link</p>
-                        <p className="text-gray-500">Link</p>
-                        <p className="text-gray-500">Link</p>
+                        <a href="" className="font-bold">
+                            Company
+                        </a>
+                        <a href="" className="text-gray-500">
+                            Privacy Policy
+                        </a>
+                        <a href="" className="text-gray-500">
+                            Product Catalog
+                        </a>
+                        <a href="" className="text-gray-500">
+                            Customer Support
+                        </a>
                     </div>
                     <div className="flex flex-col gap-5">
-                        <p className="font-bold">Company</p>
-                        <p className="text-gray-500">Link</p>
-                        <p className="text-gray-500">Link</p>
-                        <p className="text-gray-500">Link</p>
+                        <a href="" className="font-bold">
+                            Company
+                        </a>
+                        <a href="" className="text-gray-500">
+                            Testimonials
+                        </a>
+                        <a href="" className="text-gray-500">
+                            Partnerships
+                        </a>
+                        <a href="" className="text-gray-500">
+                            Events
+                        </a>
                     </div>
                     <div className="flex flex-col gap-5">
                         <p className="font-bold">Company</p>
                         <div className="mb-20 flex h-[70px] items-center rounded-full border-2 border-gray-300">
                             <div className="flex-center tab-anim relative h-full rounded-full px-10 duration-300 hover:text-white">
-                                Time and attendance
+                                Start Now
                             </div>
                             <div className="flex-center tab-anim relative h-full rounded-full px-10 duration-300 hover:text-white">
-                                Brainstorming
+                                Start Later
                             </div>
                         </div>
                     </div>
@@ -409,18 +496,30 @@ export default function Home() {
                         ©Hrmanage 2024, All rights reserved.
                     </p>
                     <div className="flex items-center gap-5">
-                        <div className="flex-center aspect-square w-[35px] rounded-full duration-300 hover:bg-secondary hover:text-white">
+                        <a
+                            href=""
+                            className="flex-center aspect-square w-[35px] rounded-full duration-300 hover:bg-secondary hover:text-white"
+                        >
                             F
-                        </div>
-                        <div className="flex-center aspect-square w-[35px] rounded-full duration-300 hover:bg-secondary hover:text-white">
+                        </a>
+                        <a
+                            href=""
+                            className="flex-center aspect-square w-[35px] rounded-full duration-300 hover:bg-secondary hover:text-white"
+                        >
                             I
-                        </div>
-                        <div className="flex-center aspect-square w-[35px] rounded-full duration-300 hover:bg-secondary hover:text-white">
+                        </a>
+                        <a
+                            href=""
+                            className="flex-center aspect-square w-[35px] rounded-full duration-300 hover:bg-secondary hover:text-white"
+                        >
                             L
-                        </div>
-                        <div className="flex-center aspect-square w-[35px] rounded-full duration-300 hover:bg-secondary hover:text-white">
+                        </a>
+                        <a
+                            href=""
+                            className="flex-center aspect-square w-[35px] rounded-full duration-300 hover:bg-secondary hover:text-white"
+                        >
                             M
-                        </div>
+                        </a>
                     </div>
                 </div>
             </div>

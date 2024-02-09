@@ -1,9 +1,14 @@
+import Image from "next/image";
+
 const Header = () => {
     return (
-        <header className="flex items-center justify-between pt-10">
-            <div>Hrmanage</div>
+        <header className="z-10 flex items-center justify-between pt-10">
+            <a href="">
+                <Image src="/logo.png" alt="Logo" height={50} width={100} />
+            </a>
+
             <nav>
-                <ul className="flex items-center gap-10 font-medium lg:hidden">
+                <ul className="flex items-center gap-10 rounded-full bg-secondary px-10 py-3 font-medium text-white lg:hidden">
                     <li>
                         <a href="">Features</a>
                     </li>
