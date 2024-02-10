@@ -31,3 +31,5 @@ Feel free to explore and customize HRmanage to fit your HR needs!
 We welcome contributions. Feel free to open issues and submit pull requests!
 
 ![ScreenShot](https://raw.githubusercontent.com/SaiSeng18/hrmanage/main/public/HRmanage.png)
+
+Credit to - [Afshin Nanase](https://www.instagram.com/afshinase/) and [Jorgen Lab](https://www.instagram.com/jorgenlab) for the design inspiration.
