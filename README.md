@@ -1,36 +1,33 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# HRmanage
+
+## Overview
+
+Welcome to HRmanage, your ultimate HR management solution! This web app is designed to streamline your HR processes, making everything from employee onboarding to performance tracking a breeze. Stay organized, communicate effortlessly, and take control of your workforce dynamics with HRmanage.
+
+## Built With
+
+HRmanage is powered by Next.js 14.1.0, utilizing static pages for optimal performance.
+
+Preview - https://hrmanage.vercel.app/
+
+### Key Features
+
+-   **User-Friendly Interface:** Intuitive design for easy navigation.
+-   **Efficient HR Processes:** Streamlined onboarding, task delegation, and performance tracking.
+-   **Static Page Advantage:** Utilizing Next.js static pages for enhanced speed and responsiveness.
 
 ## Getting Started
 
-First, run the development server:
+1. Clone the repository.
+2. Install dependencies using `npm install`.
+3. Run the app locally with `npm run dev`.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Feel free to explore and customize HRmanage to fit your HR needs!
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Contributors
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+-   Sai Seng
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+We welcome contributions. Feel free to open issues and submit pull requests!
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+![ScreenShot](https://raw.githubusercontent.com/SaiSeng18/hrmanage/main/public/HRmanage.png)

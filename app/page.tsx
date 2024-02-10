@@ -13,8 +13,9 @@ export default function Home() {
                 <Image
                     src="/assets/images/hero.png"
                     alt="Hero Image"
-                    fill
-                    className="-z-10 bg-gray-custom bg-center object-contain"
+                    width={2000}
+                    height={1500}
+                    className="-z-10 h-full w-full bg-center object-contain"
                 />
                 <div className="absolute bottom-20 left-20 md:bottom-5 md:left-5">
                     <p className="mb-10 text-7xl font-medium lg:text-5xl md:text-4xl">
@@ -200,7 +201,7 @@ export default function Home() {
                 </div>
 
                 <div className="flex-center w-full gap-5 lg:flex-col">
-                    <div className="flex h-[850px] w-1/2 flex-col justify-between rounded-[40px] bg-primary p-10 2xl:h-[700px] lg:w-full">
+                    <div className="flex h-[850px] w-1/2 flex-col justify-between rounded-[40px] bg-primary p-10 2xl:h-[700px] lg:w-full md:p-5">
                         <div className="mt-10 flex h-full w-1/2 flex-col justify-between gap-10 2xl:w-full 2xl:gap-5">
                             <p className="text-5xl capitalize text-white 2xl:text-3xl">
                                 After joining, you <br />
@@ -233,7 +234,7 @@ export default function Home() {
                                 </div>
                             </div>
 
-                            <div className="w-full rounded-3xl bg-white p-10 ">
+                            <div className="w-full rounded-3xl bg-white p-10 md:p-5">
                                 <p className="mb-10 font-medium 2xl:text-sm">
                                     Lorem ipsum, dolor sit amet consectetur
                                     adipisicing elit. Doloribus, quas harum
@@ -253,7 +254,7 @@ export default function Home() {
                         </div>
                     </div>
 
-                    <div className="flex h-[850px] w-1/2 flex-col justify-between rounded-[40px] bg-gray-custom p-10 2xl:h-[700px] lg:w-full">
+                    <div className="flex h-[850px] w-1/2 flex-col justify-between rounded-[40px] bg-gray-custom p-10 2xl:h-[700px] lg:w-full md:p-5">
                         <div className="mt-10 flex h-full w-1/2 flex-col justify-between gap-10 2xl:w-full 2xl:gap-5">
                             <p className="text-5xl capitalize  2xl:text-3xl">
                                 After joining, you <br />
@@ -273,7 +274,7 @@ export default function Home() {
                                 perferendis atque enim odit
                             </p>
 
-                            <div className="w-full rounded-3xl bg-white p-10">
+                            <div className="w-full rounded-3xl bg-white p-10 md:p-5">
                                 <p className="mb-10 font-medium 2xl:text-sm">
                                     Lorem ipsum, dolor sit amet consectetur
                                     adipisicing elit. Doloribus, quas harum
@@ -390,7 +391,7 @@ export default function Home() {
             </section>
 
             <section className="flex-center p-20 md:p-5">
-                <div className="flex-center w-full rounded-3xl bg-primary p-20">
+                <div className="flex-center w-full rounded-3xl bg-primary p-20 md:p-10">
                     <div className="relative h-[500px] w-1/2 lg:hidden">
                         <Image
                             src="/assets/images/hero.png"
@@ -406,10 +407,10 @@ export default function Home() {
                             elit. Nostrum, repellendus saepe aliquam minus
                         </p>
                         <div className="flex items-center gap-5">
-                            <button className="rounded-full border border-white px-10 py-3 text-white">
+                            <button className="rounded-full border border-white px-10 py-3 text-white md:px-5 md:py-2">
                                 Join Now
                             </button>
-                            <button className="rounded-full border border-secondary bg-secondary px-10 py-3 text-white">
+                            <button className="rounded-full border border-secondary bg-secondary px-10 py-3 text-white md:px-5 md:py-2">
                                 Join Now
                             </button>
                         </div>
@@ -491,8 +492,15 @@ export default function Home() {
 
             <div className="px-20 pb-20 md:px-5">
                 <div className="flex-between w-full rounded-full bg-white px-10 py-5 shadow-md lg:flex-col lg:gap-5 lg:rounded-3xl">
-                    <p>Hrmanage</p>
-                    <p className="text-gray-500">
+                    <a href="">
+                        <Image
+                            src="/logo.png"
+                            alt="Logo"
+                            height={50}
+                            width={100}
+                        />
+                    </a>
+                    <p className="text-center text-gray-500">
                         ©Hrmanage 2024, All rights reserved.
                     </p>
                     <div className="flex items-center gap-5">

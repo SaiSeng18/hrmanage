@@ -8,7 +8,7 @@ const Header = () => {
             </a>
 
             <nav>
-                <ul className="flex items-center gap-10 rounded-full bg-secondary px-10 py-3 font-medium text-white lg:hidden">
+                <ul className="flex items-center gap-10 lg:hidden">
                     <li>
                         <a href="">Features</a>
                     </li>
